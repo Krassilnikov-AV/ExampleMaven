@@ -1,1 +1,1 @@
-# ExampleMaven
+простой проект с maven + Git + junit
