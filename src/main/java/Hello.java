@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Hello {
 
 	public static String hello() {
-		return "Hello";
+		return "Hello!";
 	}
 
 	public static String helloAge(int age) {
@@ -18,10 +18,10 @@ public class Hello {
 		if(age <=0) {
 			throw new IllegalArgumentException();
 		}
-		return String.format("Hello%d!", age);
+		return String.format("Hello, %d!", age);
 	}
 	public static void test1() {
-		Arrays.stream(new int[]{1, 2, 3}).forEach(System.out::println);
+		Arrays.stream(new int[]{1, 2, 3}).forEach(i -> System.out.println(i));
 	}
 	public static void main(String[] args) {
 		test1();
