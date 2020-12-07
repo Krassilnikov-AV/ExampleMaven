@@ -14,6 +14,7 @@ public class HelloTest {
 	public void testHello(){
 		assertEquals("Hello!", Hello.hello());
 	}
+//	checking a hello and age
 	@Test
 	public void testHelloAge(){
 		assertEquals("Hello, 6!", Hello.helloAge(6));
