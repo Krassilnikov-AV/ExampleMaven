@@ -2,6 +2,8 @@
  * Copyright (c) 2020 Tander, All Rights Reserved.
  */
 
+import java.util.Arrays;
+
 /**
  * Класс Hello
  */
@@ -17,5 +19,12 @@ public class Hello {
 			throw new IllegalArgumentException();
 		}
 		return String.format("Hello%d!", age);
+	}
+	public static void test1() {
+		Arrays.stream(new int[]{1, 2, 3}).forEach(System.out::println);
+	}
+	public static void main(String[] args) {
+		test1();
+		test1();
 	}
 }
