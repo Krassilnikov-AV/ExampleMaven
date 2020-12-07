@@ -4,6 +4,8 @@
 
 import org.junit.*;
 
+import java.util.Arrays;
+
 /**
  * Класс HelloTest
  */
@@ -27,5 +29,13 @@ public class HelloTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void testHelloAgeNegative(){
 		Hello.helloAge(-10);
+	}
+
+	public static void test1() {
+		Arrays.stream(new int[]{1, 2, 3}).forEach(System.out.println);
+	}
+	public static void main(String[] args) {
+		test1();
+		test1();
 	}
 }

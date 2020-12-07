@@ -22,7 +22,11 @@
 			<plugin>
 				<grupID>org.apache.maven.plugins</grupID>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.3</version>
+				<version>3.5</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
